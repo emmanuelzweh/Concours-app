@@ -6,47 +6,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
 
-const HomeScreen = ()=> {
-    return (
-        <View>
-            <Text>HomeScreen</Text>
-        </View>
-    )
-}
-
-const MoreScreen = ()=> {
-    return (
-        <View>
-            <Text>SettingsScreen</Text>
-        </View>
-    )
-}
-
-const SitesScreen = ()=> {
-    return (
-        <View>
-            <Text>SettingsScreen</Text>
-        </View>
-    )
-}
-
-const ProgramsScreen = ()=> {
-    return (
-        <View>
-            <Text>SettingsScreen</Text>
-        </View>
-    )
-}
-
-
-const CollegesScreen = ()=> {
-    return (
-        <View>
-            <Text>SettingsScreen</Text>
-        </View>
-    )
-}
-
+// importing all principal screens
+import HomeScreen from '../screens/HomeScreen';
+import CollegesScreen from '../screens/CollegesScreen';
+import MoreScreen from '../screens/MoreScreen';
+import ProgramsScreen from '../screens/ProgramsScreen';
+import SitesScreen from '../screens/SitesScreen';
 
 function RootBottomTabNav() {
   return (
@@ -76,8 +41,12 @@ function RootBottomTabNav() {
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: 'tomato',
+          tabBarActiveTintColor: 'orange',
           tabBarInactiveTintColor: 'gray',
+          headerStyle: {
+            backgroundColor: 'orange',
+            
+          },
         })}
       >
         <Tab.Screen name="Home" component={HomeScreen} />
