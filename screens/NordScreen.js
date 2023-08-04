@@ -2,12 +2,17 @@
 import React from 'react';
 import {ScrollView, SafeAreaView, View, Text } from 'react-native';
 import SchoolImageCard from '../components/SchoolImageCard';
+import SiteHeaderComponent from '../components/SiteHeaderComponent';
 
 function NordScreen() {
   return (
     <SafeAreaView>
       <ScrollView>
       <View style={{ flex: 1, justifyContent: 'flex-start', alignItems: 'flex-start' }}>
+      <SiteHeaderComponent
+         imageSource="https://inphb.ci/static/media/SiteNord1.29fa9562182d105df486.jpg" 
+         headingText="Site du Nord"
+      />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteNord1.29fa9562182d105df486.jpg"
         name="Site Sud"

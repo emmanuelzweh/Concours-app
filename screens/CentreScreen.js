@@ -2,16 +2,21 @@
 import React from 'react';
 import {ScrollView, SafeAreaView, View, Text } from 'react-native';
 import SchoolImageCard from '../components/SchoolImageCard';
+import SiteHeaderComponent from '../components/SiteHeaderComponent';
 
 function CentreScreen() {
   return (
     <SafeAreaView>
       <ScrollView>
       <View style={{ flex: 1, justifyContent: 'flex-start', alignItems: 'flex-start' }}>
-      <SchoolImageCard
+        <SiteHeaderComponent
+         imageSource="https://inphb.ci/static/media/SiteCentre.51b6b4227fcfd3f08a79.jpg" 
+         headingText="Site du centre"
+         />
+      {/* <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteCentre.51b6b4227fcfd3f08a79.jpg"
         name="Site Sud"
-      />
+      /> */}
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteCentre2.75de2b54bb41e7ea84d7.jpg"
         name="Centre view"

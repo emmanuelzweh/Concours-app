@@ -2,12 +2,17 @@
 import React from 'react';
 import {ScrollView, SafeAreaView, View, Text } from 'react-native';
 import SchoolImageCard from '../components/SchoolImageCard';
+import SiteHeaderComponent from '../components/SiteHeaderComponent';
 
 function SudScreen() {
   return (
     <SafeAreaView>
       <ScrollView>
       <View style={{ flex: 1, justifyContent: 'flex-start', alignItems: 'flex-start' }}>
+      <SiteHeaderComponent
+         imageSource="https://inphb.ci/static/media/SiteSud.8d60a40fc4177a07cebc.jpg" 
+         headingText="Site du Sud"
+      />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteSud.8d60a40fc4177a07cebc.jpg"
         name="Site Sud"
