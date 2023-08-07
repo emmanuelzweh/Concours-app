@@ -3,13 +3,14 @@ import React from 'react';
 import { View, Text, TouchableOpacity, ImageBackground, StyleSheet, ScrollView } from 'react-native';
 
 const colleges = [
-  { id: 1, name: 'College A', logo: require('../assets/colleges/EDP.png') },
-  { id: 2, name: 'College B', logo: require('../assets/colleges/EDP.png') },
-  { id: 3, name: 'College C', logo: require('../assets/colleges/EDP.png') },
-  { id: 4, name: 'College D', logo: require('../assets/colleges/EDP.png') },
-  { id: 5, name: 'College E', logo: require('../assets/colleges/EDP.png') },
-  { id: 6, name: 'College F', logo: require('../assets/colleges/EDP.png') },
-  { id: 7, name: 'College G', logo: require('../assets/colleges/EDP.png') },
+  { id: 1, name: 'ECOLE DOCTORALE POLYTECHNIQUE', logo: require('../assets/colleges/EDP.png') },
+  { id: 2, name: "ECOLE SUPERIEURE D'AGRONOMIE", logo: require('../assets/colleges/ESA.png') },
+  { id: 3, name: "ECOLE SUPERIEURE D'INDUSTRIE", logo: require('../assets/colleges/ESI.png') },
+  { id: 4, name: "ECOLE SUPERIEURE DU COMMERCE ET D'ADMINISTRATION DES ENTREPRISES", logo: require('../assets/colleges/ESCAE.png') },
+  { id: 5, name: 'ECOLE SUPERIEURE DES MINES ET DE GÉOLOGIE', logo: require('../assets/colleges/ESMG.png') },
+  { id: 6, name: "ECOLE SUPERIEURE DU PÉTROLE ET DE L'ÉNERGIE", logo: require('../assets/colleges/ESPE.png') },
+  { id: 7, name: 'ECOLE SUPERIEURE DES TRAVAUX PUBLICS', logo: require('../assets/colleges/ESTP.png') },
+  { id: 8, name: "ECOLE DE FORMATION CONTINUE ET DE PERFECTIONNEMENT DES CADRES", logo: require('../assets/colleges/EFCPC.png') },
   // Add more colleges
 ];
 

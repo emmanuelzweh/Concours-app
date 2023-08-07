@@ -11,7 +11,7 @@ const CollegesStack = createStackNavigator();
 function CollegesScreen() {
   return (
     <CollegesStack.Navigator initialRouteName="CollegeList">
-        <CollegesStack.Screen name="CollegeList" component={CollegeListScreen} />
+        <CollegesStack.Screen name="CollegeList" component={CollegeListScreen} options={{headerShown: false}} />
         <CollegesStack.Screen name="CollegeDetails" component={CollegeDetailsScreen} />
     </CollegesStack.Navigator>
   )
