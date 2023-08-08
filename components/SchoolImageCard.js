@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff', // Set your desired background color here
     elevation: 0, // Add the elevation to create the shadow (adjust value as needed)
     paddingVertical: 16,
+    paddingHorizontal: 16,
     borderRadius: 8, // Optional: Add border radius for a rounded corner effect
   },
   imageContainer: {

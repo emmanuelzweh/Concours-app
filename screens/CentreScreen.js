@@ -19,19 +19,19 @@ function CentreScreen() {
       /> */}
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteCentre2.75de2b54bb41e7ea84d7.jpg"
-        name="Centre view"
+        name="Description de l'endroit"
       />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteCentre3.4bafe7dd19470af974b3.jpg"
-        name="Site Sud"
+        name="Description de l'endroit"
       />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteCentre4.b31cb0fa353c15525e11.jpg"
-        name="Site Sud"
+        name="Description de l'endroit"
       />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteCentre1.2a3ab8fd6aac452e8b3d.jpg"
-        name="Site Sud"
+        name="Description de l'endroit"
       />
     </View>
       </ScrollView>

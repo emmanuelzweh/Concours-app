@@ -18,7 +18,7 @@ const CollegeListScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       {colleges.map((college) => (
-        <TouchableOpacity key={college.id} onPress={() => navigation.navigate('CollegeDetails', { college })}>
+        <TouchableOpacity style={styles.touchableContainer} key={college.id} onPress={() => navigation.navigate('CollegeDetails', { college })}>
           <ImageBackground source={college.logo} style={styles.collegeItem}>
             <Text style={styles.collegeName}>{college.name}</Text>
           </ImageBackground>
@@ -33,12 +33,18 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f0f0f0', // Set the background color of the college list screen
   },
+
+  touchableContainer: {
+    paddingHorizontal: 8,
+    marginTop: 8,
+    elevation: 10
+  },
   collegeItem: {
     width: '100%',
     height: 200,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 5,
     backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark overlay to make text readable
   },
   collegeName: {

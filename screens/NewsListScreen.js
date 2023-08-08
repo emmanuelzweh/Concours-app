@@ -3,9 +3,11 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Image, FlatList, StyleSheet } from 'react-native';
 
 const newsArticles = [
-  { id: 1, title: 'News 1', content: 'Short content of News 1'},
-  { id: 2, title: 'News 2', content: 'Short content of News 2' },
-  // Add more news articles
+  { id: 1, title: 'News 1 Short content of News', content: 'Short content of News 1', image: require('../assets/img1.jpg')},
+  { id: 2, title: 'News 2 Short content of News', content: 'Short content of News 2', image: require('../assets/img2.jpg') },
+  { id: 3, title: 'News 2 Short content of News', content: 'Short content of News 2', image: require('../assets/img2.jpg') },
+  { id: 4, title: 'News 2 Short content of News', content: 'Short content of News 2', image: require('../assets/img2.jpg') },
+  // Add more news articles 
 ];
 // image: require('./news_image_2.png')
 
@@ -13,9 +15,9 @@ const NewsListScreen = ({ navigation }) => {
   const renderNewsItem = ({ item }) => (
     <TouchableOpacity onPress={() => navigation.navigate('NewsDetails', { article: item })}>
       <View style={styles.newsItem}>
-        {/* <Image source={item.image} style={styles.newsImage} /> */}
+        <Image source={item.image} style={styles.newsImage} />
         <Text style={styles.newsTitle}>{item.title}</Text>
-        <Text style={styles.newsContent}>{item.content}</Text>
+        {/* <Text style={styles.newsContent}>{item.content}</Text> */}
       </View>
     </TouchableOpacity>
   );
@@ -38,7 +40,7 @@ const styles = StyleSheet.create({
   },
   newsItem: {
     flexDirection: 'column',
-    alignItems: 'center',
+    // alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
     marginBottom: 10,

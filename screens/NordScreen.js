@@ -15,19 +15,19 @@ function NordScreen() {
       />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteNord1.29fa9562182d105df486.jpg"
-        name="Site Sud"
+        name="Description de l'endroit"
       />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteNord3.d8ab756659a03e7ed445.jpg"
-        name="Site Sud"
+        name="Description de l'endroit"
       />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteNord4.6539d9c82f383f32cacb.jpg"
-        name="Site Sud"
+        name="Description de l'endroit"
       />
       <SchoolImageCard
         imageUrl="https://inphb.ci/static/media/SiteNord2.99407f1b3739669c6ca7.jpg"
-        name="Site Sud"
+        name="Description de l'endroit"
       />
     </View>
       </ScrollView>
