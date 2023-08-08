@@ -1,11 +1,20 @@
-import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import React from 'react'
+import { createStackNavigator } from '@react-navigation/stack';
+import { View, Text } from 'react-native'
 
-const ProgramsScreen = () => {
+// importing the screens for this stack navigation
+import ProgramListScreen from './ProgramListScreen';
+import ProgramDetailsScreen from './ProgramDetailsScreen';
+
+
+const ProgramStack = createStackNavigator();
+
+function ProgramsScreen() {
   return (
-    <SafeAreaView>
-      <Text>Colleges</Text>
-    </SafeAreaView>
+    <ProgramStack.Navigator initialRouteName="CollegeList">
+        <ProgramStack.Screen name="Program List" component={ProgramListScreen} options={{headerShown: false}} />
+        <ProgramStack.Screen name="ProgramDetails" component={ProgramDetailsScreen} />
+    </ProgramStack.Navigator>
   )
 }
 
