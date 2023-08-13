@@ -2,7 +2,7 @@
  import React from 'react';
  import { View, Text, TouchableOpacity, Image, FlatList, StyleSheet } from 'react-native';
  
- const newsArticles = [
+ const activityArticles = [
   { id: 1, title: 'News 1 Short content of News', content: 'Short content of News 1', image: require('../assets/img1.jpg')},
   { id: 2, title: 'News 2 Short content of News', content: 'Short content of News 2', image: require('../assets/img2.jpg') },
   { id: 3, title: 'News 2 Short content of News', content: 'Short content of News 2', image: require('../assets/img2.jpg') },
@@ -13,7 +13,7 @@
  
  const ActivityListScreen = ({ navigation }) => {
    const renderNewsItem = ({ item }) => (
-     <TouchableOpacity onPress={() => navigation.navigate('NewsDetails', { article: item })}>
+     <TouchableOpacity onPress={() => navigation.navigate('ActivityDetails', { article: item })}>
        <View style={styles.newsItem}>
          <Image source={item.image} style={styles.newsImage} />
          <Text style={styles.newsTitle}>{item.title}</Text>
@@ -25,7 +25,7 @@
    return (
      <View style={styles.container}>
        <FlatList
-         data={newsArticles}
+         data={activityArticles}
          renderItem={renderNewsItem}
          keyExtractor={(item) => item.id.toString()}
        />
