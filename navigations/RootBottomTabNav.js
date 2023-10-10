@@ -21,20 +21,20 @@ function RootBottomTabNav() {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === 'Home') {
+            if (route.name === 'Accueil') {
               iconName = focused
                 ? 'home'
                 : 'home';
-            } else if (route.name === 'More') {
+            } else if (route.name === 'Plus') {
               iconName = focused ? 'menu' : 'menu';
             }
-            else if (route.name === 'Colleges') {
+            else if (route.name === 'Ecoles') {
                 iconName = focused ? 'school' : 'school';
               }
               else if (route.name === 'Sites') {
                 iconName = focused ? 'location' : 'location';
               }
-              else if (route.name === 'Programs') {
+              else if (route.name === 'Programmes') {
                 iconName = focused ? 'book' : 'book';
               }
 
@@ -49,11 +49,11 @@ function RootBottomTabNav() {
           },
         })}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Colleges" component={CollegesScreen} />
+        <Tab.Screen name="Accueil" component={HomeScreen} />
+        <Tab.Screen name="Ecoles" component={CollegesScreen} />
         <Tab.Screen name="Sites" component={SitesScreen} />
-        <Tab.Screen name="Programs" component={ProgramsScreen} />
-        <Tab.Screen name="More" component={MoreScreen} />
+        <Tab.Screen name="Programmes" component={ProgramsScreen} />
+        <Tab.Screen name="Plus" component={MoreScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   )

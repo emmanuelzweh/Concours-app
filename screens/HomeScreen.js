@@ -22,8 +22,8 @@ const HomeScreen = () => {
       tabBarActiveTintColor: 'orange',
       tabBarInactiveTintColor: 'gray'
     }}>
-      <Tab.Screen name="Nouvelles" component={NewsStackNav} />
-      <Tab.Screen name="Activites" component={ActivitesStackNav} />
+      <Tab.Screen name="ACTUALITES" component={NewsStackNav} />
+      <Tab.Screen name="CONCOURS" component={ActivitesStackNav} />
     </Tab.Navigator>
   )
 }

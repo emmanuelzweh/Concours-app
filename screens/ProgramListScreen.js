@@ -2,13 +2,13 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, ImageBackground, StyleSheet, ScrollView } from 'react-native';
 
-const programs = [
-  { id: 1, name: 'TS', logo: require('../assets/ts.jpeg') },
-  { id: 2, name: "Inginieur", logo: require('../assets/inginier.jpeg') },
+const programs = [ 
+  { id: 1, name: 'Technicien Supérieur', logo: require('../assets/ts.jpeg') },
+  { id: 2, name: "Ingénieur", logo: require('../assets/inginier.jpeg') },
   { id: 3, name: "Doctoral", logo: require('../assets/doctoral.jpeg') },
   { id: 4, name: 'Master', logo: require('../assets/ts.jpeg') },
   { id: 5, name: "Certificat", logo: require('../assets/inginier.jpeg') },
-  { id: 6, name: "Formation Professional", logo: require('../assets/doctoral.jpeg') },
+  { id: 6, name: "Formation Professionelle", logo: require('../assets/doctoral.jpeg') },
 
   // Add more programs
 ];
