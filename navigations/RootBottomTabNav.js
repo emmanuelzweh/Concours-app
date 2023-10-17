@@ -12,6 +12,7 @@ import CollegesScreen from '../screens/CollegesScreen';
 import MoreScreen from '../screens/MoreScreen';
 import ProgramsScreen from '../screens/ProgramsScreen';
 import SitesScreen from '../screens/SitesScreen';
+import MoreNavigation from './MoreNavigation';
 
 function RootBottomTabNav() {
   return (
@@ -53,7 +54,7 @@ function RootBottomTabNav() {
         <Tab.Screen name="Ecoles" component={CollegesScreen} />
         <Tab.Screen name="Sites" component={SitesScreen} />
         <Tab.Screen name="Programmes" component={ProgramsScreen} />
-        <Tab.Screen name="Plus" component={MoreScreen} />
+        <Tab.Screen name="Plus" component={MoreNavigation} />
       </Tab.Navigator>
     </NavigationContainer>
   )
